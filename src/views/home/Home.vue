@@ -213,7 +213,7 @@ export default {
         if (valid) {         
           const record = {
             ...this.formData,
-            time: new Date()   
+            time: Date.now()   
           };
           this.bill.push(record);
           window.localStorage.setItem('bill', JSON.stringify(this.bill));
